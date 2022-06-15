@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular by Maximilian on Udemy';
   name = 'Estee';
+  showSecret = false;
+  log = [];
+  // logItem = 'Cool Stuff';
+
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length + 1);
+  }
 }
